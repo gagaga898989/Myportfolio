@@ -78,3 +78,46 @@
   border: 1px solid #ccc;
   margin: 0.5rem 0;
 }
+
+/* 作品ごとのカード */
+.work-item {
+  border: 1px solid #ddd;
+  background: rgba(255, 255, 255, 0.1); /* 背景がパーティクルなら少し透かすとおしゃれ */
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.work-item h3 {
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+  margin-top: 0;
+}
+
+/* 画像を横に並べる（スマホでは縦に） */
+.work-gallery {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+.work-gallery img {
+  width: 200px; /* サイズを固定せず柔軟にするなら width: calc(33% - 10px); */
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* リンクをボタンっぽくする */
+.btn-link, .github-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.btn-link:hover { background: #555; }
