@@ -6,7 +6,7 @@
   <title>My Portfolio</title>
   <link rel="stylesheet" href="portfolio.css">
 </head>
-  <!-- パーティクル背景 -->
+
 <canvas id="bg-canvas"></canvas>
 
 <body>
@@ -15,101 +15,145 @@
   </header>
 
   <div id="main-vidual">
-    <!-- メインビジュアル（画像などあればここに） -->
-  </div>
+    </div>
 
   <main>
-    <ul id="page-link">
-      <li><a href="#area-1" class="scroll-link">My profile</a></li>
-      <li><a href="#area-2" class="scroll-link">The work</a></li>
-      <li><a href="#area-3" class="scroll-link">Skill</a></li>
-    </ul>
+    <nav>
+      <ul id="page-link">
+        <li><a href="#area-1" class="scroll-link">My profile</a></li>
+        <li><a href="#area-2" class="scroll-link">The work</a></li>
+        <li><a href="#area-3" class="scroll-link">Skill</a></li>
+      </ul>
+    </nav>
 
     <section class="area" id="area-1">
       <h2>My profile</h2>
-      <p style="color:red;">所属：大阪公立大学工業高等専門学校4年知能情報コース</p>
-      <p>部活：汽車クラブ</p>
-      <p>誕生日：2006年9月11日</p>
+      <div class="profile-card">
+        <p class="school-info">所属：大阪公立大学工業高等専門学校4年知能情報コース</p>
+        <p>部活：汽車クラブ</p>
+        <p>誕生日：2006年9月11日</p>
+      </div>
     </section>
 
     <section class="area" id="area-2">
       <h2>The work</h2>
 
-      <p>JavaScript紹介</p>
-      <p><a href="https://gagaga898989.github.io/JavaIntroduce/">紹介ページリンク</a></p>
+      <div class="work-container">
+        
+        <article class="work-item">
+          <h3>JavaScript紹介</h3>
+          <div class="work-content">
+            <p><a href="https://gagaga898989.github.io/JavaIntroduce/" class="btn-link">紹介ページを見る</a></p>
+          </div>
+        </article>
 
-      <p>自由課題作品：10作りゲーム</p>
-      <p><a href="https://colab.research.google.com/drive/1gcj6q74_kkE1AN-Fm7Z3tYJFXnb1Map0?usp=sharing">Gameリンク</a></p>
+        <article class="work-item">
+          <h3>10作りゲーム（自由課題作品）</h3>
+          <div class="work-content">
+            <p><a href="https://colab.research.google.com/drive/1gcj6q74_kkE1AN-Fm7Z3tYJFXnb1Map0?usp=sharing" class="btn-link">Google Colabで開く</a></p>
+          </div>
+        </article>
 
-      <p>高専祭ゲーム展示作品：チキンレース</p>
-      <p>担当：メインプログラミング・アイデア</p>
-      <p><a href="https://gagaga898989.github.io/ksks6/">Gameリンク</a></p>
-      <img src="1698841706531.jpg" width="193" height="130" alt="チキンレース">
+        <article class="work-item">
+          <h3>チキンレース（高専祭展示作品）</h3>
+          <div class="work-info">
+            <span class="role-badge">メインプログラミング・アイデア担当</span>
+          </div>
+          <div class="work-gallery">
+            <img src="1698841706531.jpg" alt="チキンレースのスクリーンショット">
+          </div>
+          <div class="work-description">
+             <p><a href="https://gagaga898989.github.io/ksks6/" class="btn-link">ゲームをプレイする</a></p>
+          </div>
+        </article>
 
-      <p>おみくじアプリ（製作期間：2023年12月～2024年1月）</p>
-      <a href="https://github.com/gagaga898989/omikuzi1">Githubリンク</a>
-      <p>このアプリは、名前を入力しておみくじを引くことで結果とイラストが表示されます。大吉/大凶でスペシャルメッセージボタンが出現します。</p>
-      <img src="sk1 (1).png" width="193" height="130" alt="omikuji1">
-      <img src="sk2.png" width="193" height="130" alt="omikuji2">
-      <img src="sk3.png" width="193" height="130" alt="omikuji3">
+        <article class="work-item">
+          <h3>おみくじアプリ</h3>
+          <p class="work-period">製作期間：2023年12月～2024年1月</p>
+          <div class="work-gallery">
+            <img src="sk1 (1).png" alt="omikuji1">
+            <img src="sk2.png" alt="omikuji2">
+            <img src="sk3.png" alt="omikuji3">
+          </div>
+          <div class="work-description">
+            <p>名前を入力しておみくじを引くことで結果とイラストが表示されます。大吉/大凶でスペシャルメッセージボタンが出現するギミックを搭載しています。</p>
+            <a href="https://github.com/gagaga898989/omikuzi1" class="github-link">GitHub</a>
+          </div>
+        </article>
 
-      <p>Todoリストアプリ（製作期間：2月15日～22日、約10時間）</p>
-      <a href="https://github.com/gagaga898989/todolist1.git">Githubリンク</a>
-      <p>やることを入力→締切日を設定→リスト化され、日数のカウント、ソート、完了処理、ランダムおすすめ機能あり。</p>
-      <img src="to1.png" width="193" height="130" alt="todo1">
-      <img src="to2.png" width="193" height="130" alt="todo2">
-      <img src="to3.png" width="193" height="130" alt="todo3">
-      <img src="to4.png" width="193" height="130" alt="todo4">
+        <article class="work-item">
+          <h3>Todoリストアプリ</h3>
+          <p class="work-period">製作期間：2月15日～22日（約10時間）</p>
+          <div class="work-gallery">
+            <img src="to1.png" alt="todo1">
+            <img src="to2.png" alt="todo2">
+            <img src="to3.png" alt="todo3">
+            <img src="to4.png" alt="todo4">
+          </div>
+          <div class="work-description">
+            <p>締切日の設定、残り日数のカウント、ソート機能、完了処理、ランダムおすすめ機能を実装した実用的なTODO管理ツールです。</p>
+            <a href="https://github.com/gagaga898989/todolist1.git" class="github-link">GitHub</a>
+          </div>
+        </article>
 
-      <p>総合WEBアプリ（製作期間：10月7日～2月、製作時間：約10時間）</p>
-      <a href="https://github.com/gagaga898989/my-web-app.git">Githubリンク</a>
-      <p>TODOアプリ、ブログアプリを統合。ログイン機能付き。今後はミニゲームの追加を予定。</p>
-      <img src="WEBAP1.png" width="193" height="130" alt="webapp1">
-      <img src="WEBAP2.png" width="193" height="130" alt="webapp2">
-      <img src="WEBAP3.png" width="193" height="130" alt="webapp3">
+        <article class="work-item">
+          <h3>総合WEBアプリ（TODO & Blog）</h3>
+          <p class="work-period">製作期間：10月7日～2月（約10時間）</p>
+          <div class="work-gallery">
+            <img src="WEBAP1.png" alt="webapp1">
+            <img src="WEBAP2.png" alt="webapp2">
+            <img src="WEBAP3.png" alt="webapp3">
+          </div>
+          <div class="work-description">
+            <p>TODO機能とブログ機能を統合。ログイン認証機能を実装し、ユーザーごとにデータを管理できるようにしました。現在はミニゲームの追加を計画中です。</p>
+            <a href="https://github.com/gagaga898989/my-web-app.git" class="github-link">GitHub</a>
+          </div>
+        </article>
 
-      <p>LRカードゲーム（製作期間：2025年3月～未定）</p>
-      <p>LRカードゲームのルールを参考にしたオリジナルのカードゲームを製作中。現在はデッキ構築とバトルシステムを実装中。</p>
-      <p>デッキ構築は、カードを選択してデッキを作成する機能。バトルシステムは、選択したカードで攻撃や防御を行う機能。</p>
-      <p>今後は、カードの効果や特殊能力を追加する予定。</p>
-      <img src="LR1.png" width="193" height="130" alt="LR1">
+        <article class="work-item">
+          <h3>LRカードゲーム（製作中）</h3>
+          <p class="work-period">製作開始：2025年3月～</p>
+          <div class="work-gallery">
+            <img src="LR1.png" alt="LRカードゲーム開発画面">
+          </div>
+          <div class="work-description">
+            <p>オリジナルのカードゲーム。現在はデッキ構築システムと、選択したカードによる攻撃・防御のバトル基幹システムを実装中です。今後、特殊能力などの複雑なルールを追加予定。</p>
+          </div>
+        </article>
+
+      </div>
     </section>
 
     <section class="area" id="area-3">
       <h2>Skill</h2>
-
-      <p><strong>プログラミング言語</strong></p>
-      <ul>
-        <li>Python</li>
-        <li>Arduino言語</li>
-        <li>Scratch</li>
-        <li>C#</li>
-      </ul>
-
-      <p><strong>使用ソフトウェア・ツール</strong></p>
-      <ul>
-        <li>Git / GitHub</li>
-        <li>VSCode (venv)</li>
-        <li>Arduino IDE</li>
-        <li>Deeds-DCS</li>
-        <li>MakeCode for micro:bit</li>
-        <li>Tinkercad</li>
-        <li>WSL (Windows Subsystem for Linux)</li>
-        <li>Ambient</li>
-        <li>Unity</li>
-      </ul>
+      <div class="skill-flex">
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <ul>
+            <li>Python</li>
+            <li>Arduino言語</li>
+            <li>Scratch</li>
+            <li>C#</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Tools & Software</h3>
+          <ul>
+            <li>Git / GitHub</li>
+            <li>VSCode (venv)</li>
+            <li>Unity / Arduino IDE</li>
+            <li>WSL / Tinkercad</li>
+            <li>Ambient / Deeds-DCS</li>
+          </ul>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer id="footer">
-    <small>Thank you for watching</small>
+    <small>&copy; 2026 Your Name - Thank you for watching</small>
   </footer>
 
-  <div class="start">
-    <p><img src="images/logo.png" alt="Portfolio ロゴ"></p>
-  </div>
-
-  <!-- スクリプト読み込み -->
   <script src="sample.js"></script>
 </body>
 </html>
